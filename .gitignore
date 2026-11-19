@@ -1,7 +1,7 @@
-﻿# Backend
+﻿# Backend build
 backend/target/
-backend/.mvn/
 backend/uploads/
+backend/data/
 backend/src/main/resources/static/
 
 # Frontend
