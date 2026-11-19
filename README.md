@@ -12,8 +12,8 @@
 
 ## 🚀 Live Demo
 
-- **Frontend (Vercel):** _Deploy and add URL here_
-- **API (Swagger):** `http://localhost:8081/swagger-ui.html`
+- **Frontend (Vercel): https://frontend-omega-ruddy-42.vercel.app
+- **API (Swagger):https://ai-job-portal-backend-production-bebe55d0.up.railway.app/swagger-ui.html
 
 ---
 
