@@ -72,7 +72,7 @@ function Footer() {
           display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
           <p style={{ color: "#3a5a72", fontSize: "0.8rem" }}>
             © 2026 AI Job Portal — Developed by{" "}
-            <span style={{ color: "#00f5ff" }}>Abhishek Tarnalli</span>
+            <span style={{ color: "#00f5ff" }}>Praveen G</span>
           </p>
           <div style={{ display: "flex", gap: "1.5rem" }}>
             {["Privacy", "Terms", "Contact"].map((l) => (
