@@ -127,4 +127,4 @@ The UI features a **cyberpunk / futuristic 3D** design:
 
 ## 👨‍💻 Author
 
-**Abhishek Tarnalli** — Built with ❤️ and ⚡ AI
+**Praveen G** — Built with ❤️ and ⚡ AI

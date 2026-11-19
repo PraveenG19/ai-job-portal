@@ -176,7 +176,7 @@ public class GeminiServiceImpl implements GeminiService {
         sb.append("  5. Add a brief professional summary at the top\n");
 
         sb.append("\n═".repeat(45)).append("\n");
-        sb.append("Analysis powered by AI Job Portal • praveeng@demo.com\n");
+        sb.append("Analysis powered by AI Job Portal • Praveen G\n");
 
         return sb.toString();
     }
