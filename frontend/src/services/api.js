@@ -1,20 +1,21 @@
 import axios from "axios";
 
-const api = axios.create({
-  // Empty baseURL → uses same host in both dev (Vite proxy) and prod (Spring Boot)
-  baseURL: "/api",
-});
+// In production (Vercel), set VITE_API_URL to your backend URL e.g. https://your-backend.railway.app
+// In development, Vite proxy forwards /api to localhost:8081
+const BASE = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api`
+  : "/api";
 
-// Attach JWT on every request automatically
+const api = axios.create({ baseURL: BASE });
+
+// Attach JWT on every request
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
-  }
+  if (token) config.headers.Authorization = `Bearer ${token}`;
   return config;
 });
 
-// Global 401 handler → redirect to login
+// Global 401 handler
 api.interceptors.response.use(
   (res) => res,
   (err) => {
